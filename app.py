@@ -40,7 +40,7 @@ def search():
         if found == []:
             return f"Invalid Code<br>{statement}"
         else:
-            return f"Wifi Connection Established<br>{statement}"
+            return f" Connection Established<br>{found}"
     except sqlite3.Error as e:
         return str(e) + f"<br>{statement}"
 
